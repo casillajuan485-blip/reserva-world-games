@@ -1,0 +1,1778 @@
+
+/* ==========================================
+   WORLD GAMES - ESTILOS GENERALES
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+:root {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --fondo: #080d1b;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --panel: #121b30;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --panel2: #1a2540;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --texto: #f4f7ff;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --suave: #aab8d3;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --borde: #2d3b5c;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --morado: #9639ef;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --cian: #20d6f4;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --verde: #8ee6a0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --rojo: #ff8494;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  --radio: 15px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+* { box-sizing: border-box; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+html { scroll-behavior: smooth; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+body {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--fondo);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--texto);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-family: Inter, Arial, sans-serif;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  line-height: 1.5;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+button, input, select { font: inherit; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+button { cursor: pointer; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+button:disabled { cursor: not-allowed; opacity: .45; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+img { display: block; max-width: 100%; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+h1, h2, h3, p { margin-top: 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+h1, .marca, .contador-modal { font-family: Orbitron, sans-serif; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+[hidden] { display: none !important; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.contenedor { width: min(1380px, 94%); margin: auto; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+:focus-visible {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  outline: 2px solid var(--cian);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  outline-offset: 3px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* ==========================================
+   NAVEGACIÓN
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.header {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: sticky;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  top: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  z-index: 100;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #080d1bf5;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-bottom: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  backdrop-filter: blur(12px);
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.barra {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  min-height: 72px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  align-items: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  justify-content: space-between;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 20px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.marca {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: none;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-weight: 800;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 19px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  white-space: nowrap;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.marca i { color: var(--cian); font-size: 25px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.marca span { color: var(--cian); }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.menu { display: flex; align-items: center; gap: 4px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.nav-link {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: transparent;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--suave);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 11px 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-weight: 700;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.nav-link:hover, .nav-link.activo {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #9639ef30;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.nav-link.activo { box-shadow: inset 0 -2px var(--morado); }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.btn-menu {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: none;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--panel);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 7px 12px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 23px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* ==========================================
+   BOTONES Y ELEMENTOS REUTILIZABLES
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.btn {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid transparent;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 11px 16px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-weight: 700;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  transition: transform .2s, background .2s;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.btn:hover:not(:disabled) { transform: translateY(-2px); }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.primario {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: linear-gradient(120deg, var(--morado), #b245ef);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.secundario {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #17233c;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--cian);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-color: #38516d;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.ancho { width: 100%; margin-top: 14px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.pequeño { padding: 8px 10px; font-size: 11px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.enlace { background: none; border: 0; color: var(--cian); font-size: 12px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.panel {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  min-width: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--panel);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: var(--radio);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 19px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.panel h2 { font-size: 16px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.panel h3 { font-size: 14px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.panel-titulo {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  justify-content: space-between;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  align-items: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin-bottom: 14px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.panel-titulo h2, .panel-titulo h3 { margin: 0; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.suave { color: var(--suave); font-size: 13px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.etiqueta {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--cian);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-weight: 800;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  letter-spacing: 2px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.vista { min-height: 65vh; padding: 24px 0 55px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.encabezado { margin: 10px 0 25px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.encabezado h1 {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: clamp(24px, 3vw, 35px);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin: 8px 0;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.encabezado p { color: var(--suave); font-size: 13px; }
+
+/* ==========================================
+   HERO Y CARRUSEL
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.hero {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: .95fr 1.05fr;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  overflow: hidden;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid #623b92;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 19px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background:
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    radial-gradient(circle at 20% 80%, #7138b733, transparent 55%),
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    #10152a;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  min-height: 340px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.hero-texto {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: clamp(25px, 4vw, 55px);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  flex-direction: column;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  justify-content: center;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.hero h1 {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: clamp(30px, 4vw, 52px);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  line-height: 1.15;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin: 14px 0;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.hero h1 span { color: #d65af6; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.hero p { color: #cbd6eb; font-size: 14px; max-width: 430px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.acciones { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.acciones.centradas { justify-content: center; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.hero-beneficios {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  flex-wrap: wrap;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 16px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin-top: 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--suave);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 11px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.carrusel {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: relative;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  min-height: 340px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  overflow: hidden;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #090f20;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.carrusel-slides, .slide {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: absolute;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  inset: 0;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.slide { display: none; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.slide:first-child { display: block; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.slide img {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: 100%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  height: 100%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  object-fit: cover;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.slide::after {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  content: "";
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: absolute;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  inset: 35% 0 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: linear-gradient(transparent, #080d1bee);
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.slide-texto {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: absolute;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  z-index: 1;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  left: 20px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  right: 20px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  bottom: 35px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.slide-texto h3 { margin-bottom: 4px; font-size: 19px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.slide-texto p { font-size: 12px; margin: 0; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.flecha {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: absolute;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  z-index: 3;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  top: 45%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #0b1229aa;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid #ffffff55;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 50%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: 34px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  height: 34px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.anterior { left: 10px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.siguiente { right: 10px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.indicadores {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: absolute;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  z-index: 3;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  bottom: 12px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  left: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  right: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  justify-content: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 7px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.indicador {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  height: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 20px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #ffffff88;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 0;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.indicador.activo { width: 26px; background: var(--cian); }
+
+/* ==========================================
+   DASHBOARD
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: repeat(5, 1fr);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 11px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin: 18px 0;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 15px 8px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--panel);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid #543780;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 12px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-weight: 700;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:hover { border-color: var(--cian); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos i { display: block; font-size: 21px; color: var(--cian); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos span { display: block; font-size: 11px; margin-top: 4px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.dashboard {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: 1.5fr 1fr 1fr;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 15px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.mini-snacks {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 8px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.mini-snack {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #0b1429;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 8px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  min-width: 0;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.mini-snack img {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: 100%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  height: 75px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  object-fit: contain;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 7px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.mini-snack strong {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: block;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin-top: 7px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.mini-snack span { color: var(--cian); font-size: 11px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-inicio {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background:
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    radial-gradient(circle at 80% 25%, #9639ef40, transparent 60%),
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    var(--panel);
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-nombre { font-size: 20px; font-weight: 800; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reloj { font-family: Orbitron, sans-serif; font-size: 18px; color: var(--cian); margin: 20px 0; }
+
+/* ==========================================
+   FILTROS Y CATÁLOGOS
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.filtros {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  flex-wrap: wrap;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 8px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin-bottom: 20px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.filtro {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--panel);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--suave);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 25px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 9px 14px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 12px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.filtro.activo, .filtro:hover {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--morado);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-color: var(--morado);
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.grid-catalogo {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 15px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  align-content: start;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.tarjeta {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  min-width: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--panel);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  overflow: hidden;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  transition: transform .2s, border-color .2s;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.tarjeta:hover { transform: translateY(-3px); border-color: var(--cian); }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.tarjeta-imagen { position: relative; height: 145px; background: #0b1429; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.tarjeta-imagen img {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: 100%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  height: 100%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  object-fit: contain;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 10px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.badge {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: absolute;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  top: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  left: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 4px 8px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #131c34e8;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid #625087;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 7px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-weight: 700;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.tarjeta-cuerpo { padding: 13px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.tarjeta h3 { font-size: 14px; margin-bottom: 7px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.precio { color: var(--cian); font-weight: 800; font-size: 18px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.stock { color: var(--verde); font-size: 11px; margin: 8px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalles { display: none; background: var(--panel2); padding: 10px; border-radius: 8px; color: var(--suave); font-size: 12px; margin-top: 10px; }
+
+/* ==========================================
+   SNACKS Y CARRITO
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.snacks-layout {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: minmax(0, 1fr) 285px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 17px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  align-items: start;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.item-carrito {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  justify-content: space-between;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  align-items: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 10px 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-bottom: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 12px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.item-carrito strong { display: block; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.controles-cantidad { display: flex; align-items: center; gap: 7px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.controles-cantidad button {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--panel2);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 6px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: 27px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  height: 27px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.snacks-reserva {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: 1fr;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 7px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  max-height: 250px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  overflow-y: auto;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.snack-fila {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  align-items: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  justify-content: space-between;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #0b1429;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 12px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.snack-fila small { display: block; color: var(--suave); }
+
+/* ==========================================
+   FORMULARIO Y RESERVA
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: 1.1fr 1fr 1fr .85fr;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  align-items: start;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.paso {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: inline-grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  place-items: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: 26px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  height: 26px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--morado);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 50%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin-right: 5px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-family: Inter, sans-serif;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+label {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: block;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin: 12px 0 5px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 12px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-weight: 700;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+input:not([type="radio"]), select {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: 100%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  min-width: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #0a1225;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid #405172;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 9px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 13px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+input:disabled { opacity: .5; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.dos-columnas { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.margen-arriba { margin-top: 22px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.chip {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #8ee6a01a;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--verde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid #8ee6a055;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 25px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 5px 8px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  white-space: nowrap;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.unidades-grid {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: grid;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 7px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin-top: 10px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.unidad {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #0c162a;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 8px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 11px 3px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 10px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.unidad span { display: block; font-size: 10px; margin-top: 4px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.unidad.libre span { color: var(--verde); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.unidad.ocupada { opacity: .45; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.unidad.ocupada span { color: var(--rojo); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.unidad.seleccionada { border-color: var(--cian); background: #20d6f421; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.opciones-snack {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  flex-direction: column;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 5px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin: 12px 0;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.opciones-snack label { margin: 0; font-weight: 500; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.opciones-snack input { accent-color: var(--morado); }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.ayuda { display: block; color: var(--suave); font-size: 11px; margin: 6px 0 11px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.ayuda.correcto { color: var(--verde); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.error { color: var(--rojo); font-size: 12px; min-height: 17px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.linea {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  justify-content: space-between;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 12px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 10px 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 12px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.linea span { color: var(--suave); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.linea strong { text-align: right; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.linea.total { border-top: 1px solid var(--borde); font-size: 18px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.linea.total strong { color: var(--cian); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.linea.descuento strong { color: var(--verde); }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.resumen { position: sticky; top: 90px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+hr { border: 0; border-top: 1px solid var(--borde); margin: 15px 0; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.banner-promo {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #211a3c;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid #8e4fce;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 15px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin-bottom: 18px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: flex;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  justify-content: space-between;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  align-items: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  gap: 15px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.banner-promo strong { color: var(--cian); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.banner-promo p { margin: 5px 0 0; color: var(--suave); font-size: 12px; }
+
+/* ==========================================
+   PROMOCIONES
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promos-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card { border-color: #634080; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card .tarjeta-imagen { height: 165px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card .tarjeta-imagen img { object-fit: cover; padding: 0; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-precio { color: var(--verde); font-size: 13px; font-weight: 700; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-reloj { color: var(--cian); font-family: Orbitron, sans-serif; font-size: 13px; margin: 12px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card .btn { width: 100%; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.bitacora { max-height: 340px; overflow-y: auto; font-size: 11px; color: var(--suave); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.bitacora p { padding: 8px 0; border-bottom: 1px solid var(--borde); margin: 0; }
+
+/* ==========================================
+   MODAL Y TOAST
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.modal {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: none;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: fixed;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  inset: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  z-index: 1000;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #000d;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 20px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  overflow-y: auto;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.modal-caja {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: relative;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: min(450px, 100%);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin: 7vh auto;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: var(--panel);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--morado);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 18px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 28px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  text-align: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  box-shadow: 0 0 35px #9639ef40;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.modal-icono { font-size: 34px; color: var(--cian); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.modal-caja h2 { font-size: 19px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.cerrar-modal {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: absolute;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  top: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  right: 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: none;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 25px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalle-modal {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #0b1429;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 13px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  text-align: left;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 12px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  margin: 16px 0;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalle-modal p { margin: 5px 0; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.contador-modal {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 43px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--cian);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-variant-numeric: tabular-nums;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.toast {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  display: none;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  position: fixed;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  z-index: 1200;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  top: 85px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  right: 20px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  width: min(340px, 90vw);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #1b2948;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: white;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border: 1px solid var(--cian);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-radius: 10px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 15px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  box-shadow: 0 10px 30px #0008;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 13px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.footer {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  background: #060a14;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  border-top: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  text-align: center;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  padding: 25px 15px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  color: var(--suave);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+  font-size: 11px;
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.footer strong { color: var(--cian); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.footer p { margin: 8px 0; }
+
+/* ==========================================
+   TEMAS DINÁMICOS
+========================================== */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+body.tema-playstation { --morado: #9639ef; --cian: #20d6f4; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+body.tema-xbox { --morado: #26864b; --cian: #9de75e; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+body.tema-pc { --morado: #ad338c; --cian: #ff89d8; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+body.tema-arcade { --morado: #bd6a24; --cian: #ffce57; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+body.tema-internet { --morado: #286fc0; --cian: #71e5ff; }
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media (max-width: 1250px) {
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .reserva-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .resumen { position: static; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .promos-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media (max-width: 1050px) {
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .dashboard { grid-template-columns: 1fr 1fr; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .dashboard > .panel:first-child { grid-column: span 2; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .snacks-layout { grid-template-columns: 1fr 260px; }
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media (max-width: 850px) {
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .btn-menu { display: block; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .menu {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    display: none;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    position: absolute;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    top: 72px;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    left: 0;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    width: 100%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    background: #10192e;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    border-bottom: 1px solid var(--borde);
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    padding: 12px 4%;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    box-shadow: 0 15px 30px #0009;
+/* Finaliza este conjunto de reglas de presentación. */
+  }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .menu .nav-link { display: block; width: 100%; text-align: left; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .hero { grid-template-columns: 1fr; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .carrusel { min-height: 270px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .accesos {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    overflow-x: auto;
+/* Finaliza este conjunto de reglas de presentación. */
+  }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .info-grid { grid-template-columns: 1fr; }
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media (max-width: 650px) {
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .vista { padding-top: 16px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .marca { font-size: 15px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .hero-texto { padding: 24px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .hero h1 { font-size: 30px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .carrusel { min-height: 215px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .dashboard, .reserva-grid, .snacks-layout {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    grid-template-columns: 1fr;
+/* Finaliza este conjunto de reglas de presentación. */
+  }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .dashboard > .panel:first-child { grid-column: auto; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .grid-catalogo { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .promos-grid { grid-template-columns: 1fr; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .tarjeta-imagen { height: 120px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .tarjeta-cuerpo { padding: 11px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .tarjeta h3 { font-size: 12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .precio { font-size: 15px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .mini-snacks { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .mini-snack img { height: 55px; }
+
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .banner-promo { flex-direction: column; align-items: flex-start; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .resumen { position: static; }
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media (max-width: 370px) {
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .grid-catalogo { grid-template-columns: 1fr; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .dos-columnas { grid-template-columns: 1fr; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  .unidades-grid { grid-template-columns: repeat(2, 1fr); }
+/* Finaliza este conjunto de reglas de presentación. */
+}
+
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media (prefers-reduced-motion: reduce) {
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  html { scroll-behavior: auto; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+  *, *::before, *::after {
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    transition-duration: .01ms !important;
+/* Establece esta propiedad visual conservando su valor original o la adaptación PWA indicada. */
+    animation-duration: .01ms !important;
+/* Finaliza este conjunto de reglas de presentación. */
+  }
+/* Finaliza este conjunto de reglas de presentación. */
+}
+/* Detalle de productos y enlaces sociales */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalle-snack { display:flex; justify-content:space-between; gap:12px; padding:10px 0; border-bottom:1px solid var(--borde); font-size:11px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalle-snack > strong { white-space:nowrap; color:var(--cian); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalle-snack small { display:block; color:var(--suave); margin-top:3px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalle-snack .origen-promo { color:var(--verde); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-cartel { display:block; width:100%; padding:0; margin:0 0 15px; border:1px solid #8051ba; border-radius:12px; overflow:hidden; background:#10152a; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-cartel img { width:100%; height:auto; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-inicio .reloj { margin:10px 0; font-size:15px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.redes-sociales { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin:18px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.redes-sociales a { display:flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--borde); border-radius:24px; color:var(--texto); text-decoration:none; transition:transform .25s,box-shadow .25s,border-color .25s; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.redes-sociales i { color:var(--cian); font-size:18px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.redes-sociales a:hover,.redes-sociales a:focus-visible { transform:translateY(-3px); border-color:var(--cian); box-shadow:0 0 18px #20d6f433; }
+/* Luz, elevación e iconos animados en los cinco accesos */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button { position:relative; isolation:isolate; overflow:hidden; transition:transform .25s,box-shadow .25s,border-color .25s,background .25s; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(110deg,transparent 20%,#ffffff24 48%,transparent 75%); transform:translateX(-130%); transition:transform .6s; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos i { transition:transform .3s,color .3s; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:hover,.accesos button:focus-visible { transform:translateY(-6px); background:#222449; border-color:var(--cian); box-shadow:0 8px 25px #9639ef55,0 0 12px #20d6f42b; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:hover::before,.accesos button:focus-visible::before { transform:translateX(130%); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:hover i,.accesos button:focus-visible i { transform:scale(1.22) rotate(-9deg); color:#fff; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:active { transform:translateY(-1px) scale(.97); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.nav-link,.btn { transition:transform .2s,background .2s,box-shadow .2s; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.nav-link:hover,.btn:hover:not(:disabled) { box-shadow:0 4px 18px #9639ef40; }
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media(prefers-reduced-motion:reduce) { .accesos button:hover,.accesos button:focus-visible,.accesos button:hover i,.accesos button:focus-visible i,.redes-sociales a:hover { transform:none; } .accesos button::before { display:none; } }
+/* Tarjetas compactas, con el contador integrado en la imagen */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.dashboard { align-items:stretch; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.dashboard > .panel { padding:16px; display:flex; flex-direction:column; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.dashboard > .panel > h2 { margin-bottom:12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.dashboard .mini-snacks { margin-top:auto; margin-bottom:auto; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.dashboard #irReserva,.dashboard .promo-inicio > .btn { margin-top:auto; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.dashboard .promo-inicio { gap:8px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-cartel { position:relative; margin:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-cartel img { height:190px; object-fit:contain; background:#181b37; padding-bottom:37px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.temporizador-imagen { position:absolute; inset:auto 0 0; display:flex; flex-direction:column; align-items:center; gap:3px; padding:7px 5px; background:#080d1bf2; color:#fff; border-top:1px solid #ffffff24; text-align:center; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.temporizador-imagen > span { font:500 10px Inter,Arial,sans-serif; color:#d4def1; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.temporizador-imagen .reloj,.temporizador-imagen .promo-reloj { display:block; font:700 12px Inter,Arial,sans-serif; font-variant-numeric:tabular-nums; color:#59e9ff; margin:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card { display:flex; flex-direction:column; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card .tarjeta-imagen { height:250px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card .tarjeta-imagen img { object-fit:cover; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card .promo-visual:has(img[src="promo-refresco.svg"]) img { object-fit:contain; padding-bottom:45px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card .tarjeta-cuerpo { margin-top:auto; padding:12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-texto-imagen { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:22px 18px 65px; background:linear-gradient(#080d1b88,#080d1bee); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-texto-imagen h3 { font-size:21px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-texto-imagen p { font-size:14px; color:#f4f7ff; margin:0 0 10px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-texto-imagen strong { color:#a8f0b5; font-size:15px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .suave { font-size:13px; line-height:1.65; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid label { font-size:13px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .ayuda { font-size:12px; line-height:1.55; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid h2 { line-height:1.5; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalle-snack { font-size:12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.modal-caja { width:min(500px,100%); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.detalle-modal { font-size:14px; line-height:1.65; }
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media(max-width:1050px) and (min-width:651px) { .dashboard > .panel:first-child { min-height:210px; } }
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media(max-width:650px) { .promo-cartel img { height:220px; } .dashboard > .panel { min-height:0; } }
+/* Reserva guiada: una tarjeta y una tarea a la vez */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-asistente,.reserva-grid,.navegacion-pasos { width:min(660px,100%); margin-left:auto; margin-right:auto; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid { display:block; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .tarjeta-paso { width:100%; position:static; padding:24px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .tarjeta-paso h2:focus { outline:none; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.progreso-reserva { list-style:none; display:flex; gap:8px; padding:0; margin:0 0 18px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.progreso-reserva li { flex:1; font-size:12px; color:var(--suave); padding:10px 4px; border-bottom:3px solid var(--borde); text-align:center; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.progreso-reserva li.actual { color:var(--texto); border-color:var(--cian); font-weight:800; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.progreso-reserva li.completado { color:var(--verde); border-color:var(--verde); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva { padding:16px 18px; background:#172b3a; border:1px solid #20d6f45c; border-left:4px solid var(--cian); border-radius:12px; color:#f2f8ff; font-size:14px; line-height:1.65; margin-bottom:18px; min-height:72px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.origen-reserva { color:var(--verde); font-size:13px; line-height:1.6; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.campo-guiado { outline:2px solid var(--cian); outline-offset:3px; box-shadow:0 0 15px #20d6f422; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.navegacion-pasos { display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:18px; margin-bottom:20px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#etiquetaPaso { color:var(--suave); font-size:12px; margin-right:auto; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSiguiente { margin-left:auto; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSnacks .btn-agregar { padding:6px 10px; font-size:11px; border-radius:7px; white-space:nowrap; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSnacks .snacks-reserva { max-height:330px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoResumen .linea strong { overflow-wrap:anywhere; max-width:65%; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoResumen .ayuda { line-height:1.6; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#vista-reservar .encabezado { text-align:center; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#vista-reservar .encabezado p { max-width:660px; margin:0 auto; }
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media(max-width:650px) { .reserva-grid .tarjeta-paso { padding:18px; } .progreso-reserva li { font-size:11px; } .guia-reserva { font-size:13px; } .navegacion-pasos .btn { font-size:12px; padding:10px 12px; } }
+/* Versión compacta: controles de tamaño normal y menos desplazamiento */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#vista-reservar { padding-top:10px; padding-bottom:20px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#vista-reservar .encabezado { margin:4px 0 12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#vista-reservar .encabezado h1 { font-size:clamp(21px,2.5vw,28px); margin:4px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#vista-reservar .encabezado p { display:none; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-asistente,.reserva-grid,.navegacion-pasos { width:min(720px,100%); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.progreso-reserva { margin-bottom:8px; gap:5px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.progreso-reserva li { padding:6px 3px; font-size:11px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva { min-height:0; padding:9px 12px; font-size:13px; line-height:1.45; margin-bottom:10px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.origen-reserva { font-size:12px; margin:0 0 8px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .tarjeta-paso { padding:15px 18px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .tarjeta-paso h2 { font-size:15px; margin:0 0 8px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .paso { width:22px; height:22px; font-size:12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid input:not([type=radio]),.reserva-grid select { padding:7px 9px; min-height:34px; border-radius:7px; font-size:12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid label { font-size:12px; margin:5px 0 4px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .suave { font-size:12px; margin-bottom:8px; line-height:1.45; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid .ayuda { font-size:11px; margin:3px 0 6px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo { display:grid; grid-template-columns:1fr 1fr; gap:8px 14px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo > h2,#pasoEquipo > .dos-columnas,#pasoEquipo > .panel-titulo,#pasoEquipo > .unidades-grid,#pasoEquipo > #mensajeDisponibilidad,#pasoEquipo > #bloqueSegundaUnidad { grid-column:1/-1; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo > .campo-compacto:nth-of-type(4) { grid-column:1/-1; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo .dos-columnas { gap:14px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo [id^=guia-] { display:none; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo .margen-arriba { margin-top:2px; margin-bottom:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo h3 { font-size:12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo .unidades-grid { grid-template-columns:repeat(6,minmax(0,1fr)); gap:5px; margin-top:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo .unidad { padding:6px 3px; font-size:10px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo .unidad span { margin-top:1px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoEquipo #mensajeDisponibilidad { margin:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.navegacion-pasos { margin-top:10px; margin-bottom:5px; gap:8px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.navegacion-pasos .btn { padding:8px 12px; font-size:12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.snack-destacado { display:flex; align-items:center; gap:12px; padding:10px 12px; margin-bottom:10px; border-radius:10px; border:1px solid #20d6f455; background:linear-gradient(120deg,#1b3046,#272044); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.snack-destacado > i { font-size:26px; color:var(--cian); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.snack-destacado strong { font-size:14px; display:block; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.snack-destacado span { font-size:11px; color:var(--suave); display:block; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSnacks .opciones-snack { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSnacks .opciones-snack label { padding:9px; border:1px solid var(--borde); border-radius:8px; background:#0b1429; margin:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSnacks .opciones-snack label:has(input:checked) { border-color:var(--cian); background:#20d6f412; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.extras-cabecera { border-left:3px solid var(--cian); padding:7px 10px; margin:8px 0; background:#20d6f40b; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.extras-cabecera .titulo-extras { color:var(--cian); font-size:12px; margin:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#carritoReserva { max-height:95px; overflow-y:auto; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#carritoReserva .item-carrito { padding:5px 0; font-size:11px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSnacks .snacks-reserva { grid-template-columns:1fr 1fr; max-height:190px; gap:6px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSnacks .snack-fila { padding:7px; font-size:11px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoSnacks .btn-agregar { padding:5px 7px; font-size:10px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#opcionesPromo hr { margin:8px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#opcionesPromo h3 { font-size:12px; margin-bottom:5px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#formReserva .error { min-height:0; margin:4px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#formReserva .ayuda { margin-bottom:6px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoResumen .linea { padding:6px 0; font-size:12px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoResumen .linea.total { font-size:17px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoResumen hr { margin:6px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoResumen .detalle-snack { padding:5px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#pasoResumen .btn { margin-top:8px; padding:9px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.campo-entrada { animation:enfoque-campo .45s ease-out; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+@keyframes enfoque-campo { from { box-shadow:0 0 0 5px #20d6f430; } to { box-shadow:0 0 0 0 #20d6f400; } }
+/* Aplica estas reglas únicamente cuando coincide el tamaño o preferencia indicado. */
+@media(max-width:550px) { #pasoEquipo { gap:6px 10px; } .reserva-grid .tarjeta-paso { padding:12px; } #pasoEquipo .unidades-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } #pasoSnacks .snacks-reserva { grid-template-columns:1fr; } .snack-destacado strong { font-size:12px; } }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.promo-card .tarjeta-imagen img { object-fit:contain; padding:0 0 45px; background:#181b37; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.reserva-grid input[aria-invalid="true"] { border-color:var(--rojo); outline-color:var(--rojo); }
+/* Identidad del robot y estados con más contraste */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.marca { display:inline-flex; align-items:center; gap:6px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.logo-marca,.logo-seccion,.marca-footer img { object-fit:contain; background:#fff; border-radius:7px; flex-shrink:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.logo-seccion { display:inline-block; vertical-align:middle; margin:0 8px 4px 0; width:27px; height:34px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.encabezado .logo-seccion { float:left; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#vista-reservar .encabezado { display:flex; align-items:center; justify-content:center; gap:8px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+#vista-reservar .encabezado .logo-seccion { float:none; margin:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.marca-footer { display:inline-flex; align-items:center; gap:8px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.btn:not(:disabled):hover,.btn:not(:disabled):focus-visible { background:#27def1; color:#071522; border-color:#84f4ff; box-shadow:0 5px 22px #20d6f450; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.btn.primario:not(:disabled):hover,.btn.primario:not(:disabled):focus-visible { background:linear-gradient(110deg,#d52fe9,#783cf1); color:#fff; border-color:#e39aff; box-shadow:0 5px 24px #c33bfa60; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.nav-link:hover,.nav-link:focus-visible { background:#7531bb; color:#fff; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:nth-child(1) { --color-hover:#6540bd; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:nth-child(2) { --color-hover:#146f80; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:nth-child(3) { --color-hover:#a13373; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:nth-child(4) { --color-hover:#895713; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:nth-child(5) { --color-hover:#8c35a8; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:hover,.accesos button:focus-visible { background:var(--color-hover); border-color:#ffffff99; color:#fff; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.accesos button:hover i,.accesos button:focus-visible i { color:#fff; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva { position:relative; padding-left:39px; font-weight:600; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva::before { content:"➜"; position:absolute; left:13px; top:9px; font-size:19px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva.aviso-pendiente { background:#243467; border-color:#8caaff; border-left-color:#ffdb74; color:#fff5d9; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva.aviso-error { background:#561e37; border-color:#ff819f; color:#fff0f3; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva.aviso-error::before { content:"!"; font-weight:900; color:#ffd66f; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva.aviso-exito { background:#153f37; border-color:#67d6a1; color:#c8ffe4; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.guia-reserva.aviso-exito::before { content:"✓"; color:#87f3b3; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.toast { background:#243467; border-left:5px solid #ffdb74; color:#fff; font-weight:600; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.disponibilidad-catalogo { display:flex; flex-wrap:wrap; gap:6px; font-size:10px; margin:9px 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.disponibilidad-catalogo > span { padding:4px 7px; border-radius:6px; border:1px solid; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.cuenta-libres { color:#aff3c3; background:#16382b; border-color:#357956!important; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.cuenta-ocupadas { color:#ffc1cd; background:#3a2132; border-color:#815065!important; }
+
+/* Información de la microempresa ficticia */
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.contacto-empresa { margin:16px 0; padding:14px; border:1px solid var(--borde); border-radius:10px; background:#0b1429; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.contacto-empresa h3 { color:var(--cian); margin-bottom:8px; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.datos-empresa dl { margin:12px 0 0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.datos-empresa dl > div { padding:8px 0; border-bottom:1px solid var(--borde); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.datos-empresa dl > div:last-child { border-bottom:0; }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.datos-empresa dt { font-size:12px; font-weight:700; color:var(--texto); }
+/* Define el aspecto de los elementos que coinciden con este selector. */
+.datos-empresa dd { margin:3px 0 0; color:var(--suave); font-size:12px; overflow-wrap:anywhere; }
