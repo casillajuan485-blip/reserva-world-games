@@ -1,0 +1,224 @@
+{
+  "equipos": [
+    {
+      "id": "ps5",
+      "categoria": "playstation",
+      "nombre": "PlayStation 5",
+      "cantidad": 3,
+      "precio": 40,
+      "icono": "bi-controller",
+      "imagen": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=600&q=75",
+      "detalle": "Consola PS5 con juegos y controles."
+    },
+    {
+      "id": "ps4",
+      "categoria": "playstation",
+      "nombre": "PlayStation 4",
+      "cantidad": 3,
+      "precio": 30,
+      "icono": "bi-controller",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Sony-PlayStation-4-PS4-Console-FL.png",
+      "detalle": "PlayStation 4 para juegos individuales y multijugador."
+    },
+    {
+      "id": "ps3",
+      "categoria": "playstation",
+      "nombre": "PlayStation 3",
+      "cantidad": 2,
+      "precio": 20,
+      "icono": "bi-controller",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/13/Sony-PlayStation-PS3-Slim-Console-FL.jpg",
+      "detalle": "Disfruta de títulos clásicos."
+    },
+    {
+      "id": "pcg",
+      "categoria": "pc",
+      "nombre": "PC Gamer",
+      "cantidad": 12,
+      "precio": 25,
+      "icono": "bi-pc-display",
+      "imagen": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=600&q=75",
+      "detalle": "Computadora con periféricos gaming."
+    },
+    {
+      "id": "pcn",
+      "categoria": "pc",
+      "nombre": "PC Normal",
+      "cantidad": 8,
+      "precio": 12,
+      "icono": "bi-display",
+      "imagen": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=600&q=75",
+      "detalle": "Navegación, ofimática y trabajos."
+    },
+    {
+      "id": "xsx",
+      "categoria": "xbox",
+      "nombre": "Xbox Series X",
+      "cantidad": 2,
+      "precio": 35,
+      "icono": "bi-controller",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/12/Xbox_Series_X_2.jpg",
+      "detalle": "Consola Xbox Series X."
+    },
+    {
+      "id": "xss",
+      "categoria": "xbox",
+      "nombre": "Xbox Series S",
+      "cantidad": 2,
+      "precio": 25,
+      "icono": "bi-controller",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/54/Xbox_Series_S_with_controller.jpg",
+      "detalle": "Consola Xbox Series S."
+    },
+    {
+      "id": "arc",
+      "categoria": "arcade",
+      "nombre": "Arcade Retro",
+      "cantidad": 4,
+      "precio": 15,
+      "icono": "bi-joystick",
+      "imagen": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=75",
+      "detalle": "Máquinas Arcade y juegos retro."
+    },
+    {
+      "id": "int",
+      "categoria": "internet",
+      "nombre": "Internet / Navegación",
+      "cantidad": 8,
+      "precio": 10,
+      "icono": "bi-globe",
+      "imagen": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=600&q=75",
+      "detalle": "Puestos de Internet independientes en esta simulación."
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Hamburguesa Gamer",
+      "tipo": "comidas",
+      "precio": 25,
+      "stock": 20,
+      "imagen": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=75"
+    },
+    {
+      "id": 2,
+      "nombre": "Papas fritas",
+      "tipo": "comidas",
+      "precio": 15,
+      "stock": 35,
+      "imagen": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=75"
+    },
+    {
+      "id": 3,
+      "nombre": "Nachos",
+      "tipo": "comidas",
+      "precio": 18,
+      "stock": 18,
+      "imagen": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=500&q=75"
+    },
+    {
+      "id": 4,
+      "nombre": "Gaseosa",
+      "tipo": "bebidas",
+      "precio": 8,
+      "stock": 50,
+      "imagen": "https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=500&q=75"
+    },
+    {
+      "id": 5,
+      "nombre": "Café",
+      "tipo": "bebidas",
+      "precio": 12,
+      "stock": 25,
+      "imagen": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=500&q=75"
+    },
+    {
+      "id": 6,
+      "nombre": "Combo Gamer 1",
+      "tipo": "combos",
+      "precio": 35,
+      "stock": 10,
+      "imagen": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=500&q=75"
+    },
+    {
+      "id": 7,
+      "nombre": "Combo Gamer 2",
+      "tipo": "combos",
+      "precio": 45,
+      "stock": 8,
+      "imagen": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=75"
+    },
+    {
+      "id": 8,
+      "nombre": "Combo Gamer 3",
+      "tipo": "combos",
+      "precio": 55,
+      "stock": 6,
+      "imagen": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=500&q=75"
+    }
+  ],
+  "promociones": [
+    {
+      "id": 1,
+      "nombre": "1 hora de juego + gaseosa",
+      "dias": 5,
+      "minutos": 60,
+      "gaseosas": 1,
+      "descuento": 5,
+      "descripcion": "1 hora de juego en un equipo + 1 gaseosa.",
+      "imagen": "imagenes/promo-refresco.svg"
+    },
+    {
+      "id": 2,
+      "nombre": "2 horas de juego + 2 gaseosas",
+      "dias": 5,
+      "minutos": 120,
+      "gaseosas": 2,
+      "descuento": 5,
+      "descripcion": "2 horas de juego en un equipo + 2 gaseosas.",
+      "imagen": "imagenes/promo-2.svg"
+    },
+    {
+      "id": 3,
+      "nombre": "3 horas de juego + 3 gaseosas",
+      "dias": 6,
+      "minutos": 180,
+      "gaseosas": 3,
+      "descuento": 5,
+      "descripcion": "3 horas de juego en un equipo + 3 gaseosas.",
+      "imagen": "imagenes/promo-3.svg"
+    },
+    {
+      "id": 4,
+      "nombre": "4 horas de juego + 4 gaseosas",
+      "dias": 6,
+      "minutos": 240,
+      "gaseosas": 4,
+      "descuento": 5,
+      "descripcion": "4 horas de juego en un equipo + 4 gaseosas.",
+      "imagen": "imagenes/promo-4.svg"
+    }
+  ],
+  "slides": [
+    {
+      "titulo": "Bienvenido a World Games",
+      "descripcion": "Tu centro de entretenimiento gaming.",
+      "imagen": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1100&q=80"
+    },
+    {
+      "titulo": "Promociones especiales",
+      "descripcion": "Juega y ahorra con nuestras ofertas.",
+      "imagen": "../img/left4_dead.jpg"
+    },
+    {
+      "titulo": "PlayStation y Xbox",
+      "descripcion": "Elige el modelo y la unidad que prefieras.",
+      "imagen": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1100&q=80"
+    },
+    {
+      "titulo": "PC Gamer",
+      "descripcion": "Equipos para tus sesiones de juego.",
+      "imagen": "../img/silent_hill.jpg"
+    }
+  ]
+}
