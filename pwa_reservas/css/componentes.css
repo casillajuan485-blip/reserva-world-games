@@ -1,0 +1,40 @@
+/* BEM: cada bloque nuevo declara sus elementos y estados sin depender de IDs ni selectores profundos. */
+:where(.acceso) { position:fixed; inset:0; z-index:1000; display:grid; place-items:center; padding:16px; overflow:auto; background:#080d1bec; }
+.acceso[hidden], .instalacion[hidden], .reserva-exito[hidden] { display:none; }
+.acceso__panel { width:min(100%,420px); display:grid; gap:12px; padding:24px; }
+.acceso__panel label { display:grid; gap:5px; }
+.acceso__acciones { display:flex; flex-wrap:wrap; gap:10px; }
+.acceso__error { color:#ff9ca8; min-height:1em; }
+.acceso-bloqueado .modal { visibility:hidden; }
+
+.horario-inicio { display:block; margin:6px 0 10px; color:#f2eaff; line-height:1.35; font-size:clamp(.75rem,1.6vw,.95rem); }
+.reserva-ayuda { display:block; margin:7px 0 1px; line-height:1.3; }
+.reserva-ayuda--valida { color:#86edb0; }
+.reserva-ayuda--error { color:#ff9ca8; }
+#formReserva .dato-cliente .reserva-ayuda { display:block; margin-top:6px; }
+.reserva-horario { color:#f0dcff; margin:0; font-size:.77rem; line-height:1.3; }
+.reserva-horario:empty { display:none; }
+
+:where(.instalacion,.reserva-exito) { position:fixed; z-index:400; left:50%; transform:translateX(-50%); width:min(94%,540px); padding:12px 16px; border:1px solid #9860d4; border-radius:14px; background:#17142d; color:#fff; box-shadow:0 8px 32px #0007; }
+.instalacion { top:max(12px, env(safe-area-inset-top)); display:flex; align-items:center; justify-content:space-between; gap:8px; z-index:1100; }
+.instalacion__acciones { display:flex; gap:6px; }
+.reserva-exito { top:max(12px, env(safe-area-inset-top)); text-align:center; border-color:#72dca3; }
+.reserva-exito__titulo { display:block; color:#9cf0c1; font-size:1.1rem; }
+.tarjeta__titulo { min-width:0; }
+.tarjeta__titulo--promocion { font-size:.82rem; margin:0 0 4px; }
+@media (orientation:landscape) and (max-height:500px) {
+  .acceso__panel { padding:12px; gap:5px; }
+  .horario-inicio { margin-block:2px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  :where(.acceso,.instalacion,.reserva-exito) { transition:none; }
+}
+
+/* Horario visible en Inicio y ayuda accesible junto al campo de hora. */
+.horario-inicio { display:grid; gap:2px; padding:6px 10px; border-inline-start:3px solid #d496ff; border-radius:5px; background:#0b1028ed; color:#fff; font-size:clamp(.74rem,2.9vw,1rem); }
+.horario-inicio strong { color:#f0caff; }
+#guia-horaReserva { display:block; width:100%; margin:4px 0; padding:6px 8px; border-inline-start:3px solid #cd9bfa; background:#20153b; color:#fff; }
+#filtrosEquipos .filtro, #filtrosSnacks .filtro { min-height:44px; }
+/* Las etiquetas quedan dentro de la tarjeta y alejadas del botón de detalles. */
+.tarjeta .tarjeta-imagen .badge { z-index:1; inset:4px auto auto 4px; max-inline-size:calc(100% - 54px); white-space:normal; overflow-wrap:anywhere; line-height:1.2; padding:3px 5px; font-size:clamp(.68rem,2.8vw,.82rem); color:#fff; background:#0b0e23f2; border:1px solid #bc89ed; border-radius:6px; }
+@media (max-width:599px) { #vista-inicio .hero-pwa { background-position:center 25%; padding:10px; } #vista-inicio .accesos-pwa button { background-position:center 28%; } }
